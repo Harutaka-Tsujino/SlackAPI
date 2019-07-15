@@ -1,0 +1,141 @@
+html, body{
+	margin: 0 0;
+	width: 100%;
+	background-color: rgb(253, 253, 253);
+	box-sizing: border-box;
+	overflow: hidden
+}
+
+.space{
+	width: 100%; height: 6.3vh;
+}
+
+header{
+	background-color: rgb(49, 49, 63);
+	width: 100%; height: 6.3%;
+	position: fixed;
+	z-index: 100;
+}
+
+.user{
+	color: rgb(105, 105, 105);
+	position: relative;
+	top: 38.2vh;
+	width: 15%;
+	left: 4%;
+}
+
+.myUser{
+	color: rgb(105, 105, 105);
+	position: relative;
+	top: 36.2vh;
+	width: 15%;
+	right: -79.6vw;
+}
+
+.textBox{
+	background-color: rgb(222, 222, 222);
+	width: 17vw;
+	border-radius: 1.2vw;
+	padding: 0.6vw 1vw 0.6vw 1vw;
+	overflow-wrap: break-word;
+}
+
+.textBox:after {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	top: 0.4vh;
+	left: -1.15vw;
+	border: 0.45vw solid transparent;
+	border-right: 1.1vw solid rgb(222, 222, 222);
+	transform: rotate(35deg);
+}
+
+.myTextBox{
+	background-color: rgb(196, 255, 148);
+	position: relative;
+	width: 17vw;
+	left: 2.4vw;
+	border-radius: 1.2vw;
+	padding: 0.6vw 1vw 0.6vw 1vw;
+	overflow-wrap: break-word;
+}
+
+.myTextBox:after {
+	display: inline-block;
+	content: "";
+	position: absolute;
+	top: 0.4vh;
+	left: 18.6vw;
+	border: 0.45vw solid transparent;
+	border-right: 1.1vw solid rgb(196, 255, 148);
+	transform: rotate(148deg);
+}
+
+.expression{
+	width: 25%;
+	margin: 0vw 0vw 0vw 4vw;
+	position: relative;
+	top: 32vh;
+	overflow-wrap: break-word;
+	display: flex;
+	align-items: flex-end;
+}
+
+.myExpression{
+	width: 25%;
+	margin: 0vw 0vw 0vw 4vw;
+	position: relative;
+	top: 32vh;
+	right: -69.3vw;
+	overflow-wrap: break-word;
+	display: flex;
+	align-items: flex-end;
+}
+
+.timestamp{
+	color: rgb(155, 155, 155);
+	font-size: 80%;
+	position: relative;
+	overflow-wrap: normal;
+	height: 3.69vh;
+	left: 5%;
+}
+
+.icon{
+	position: relative;
+	background-size: cover;
+	width: 3vw; height: 3vw;
+	left: 3%;
+}
+
+#commentBox{
+	width: 100vw;height: 80vh;
+	position: absolute;
+	top: 6vh;
+	overflow:auto;
+	overflow-x: hidden;
+	background-color:rgb(255, 255, 255);
+}
+
+#inputArea{
+	width: 99.7vw;
+	height: 13.4vh;
+	position: absolute;
+	bottom: 0;
+	overflow: auto;
+	background-color:rgb(255, 255, 255);
+}
+
+#operationSummry{
+	position: absolute;
+	font-size: 50%;
+	bottom: 11vh;right: 0.3vw;
+}
+
+#webPageDescription{
+	position: absolute;
+	font-size: 100%;
+	bottom: 0vh;right: 0.3vw;
+}
