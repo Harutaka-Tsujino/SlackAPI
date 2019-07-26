@@ -108,6 +108,8 @@ header{
 	background-size: cover;
 	width: 3vw; height: 3vw;
 	left: 3%;
+	bottom: -35vh;
+	border-radius: 50%;
 }
 
 #commentBox{
