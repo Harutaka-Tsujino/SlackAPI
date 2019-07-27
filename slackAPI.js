@@ -13,8 +13,6 @@ let commentBox;
 
 let userNameMap = new Map();
 
-let weeklyMap = ["日", "月", "火", "水", "木", "金", "土"];
-
 const LoadUserNames = () => {
 	xhr.open("GET",
 		`https://slack.com/api/users.list?token=${TOKEN}&pretty=1`,
@@ -90,6 +88,9 @@ const InitializeTimeStamp = (isLastMessage, message, timestampDiv) => {
 	let hour = d.getHours() <= HALF_HOUR ?
 		'午前 ' + d.getHours() :
 		'午後 ' + (d.getHours() - HALF_HOUR);
+
+	let weeklyMap = ["日", "月", "火", "水", "木", "金", "土"];
+
 	let week = weeklyMap[d.getDay()];
 	let min = ('0' + d.getMinutes()).slice(-2);
 
